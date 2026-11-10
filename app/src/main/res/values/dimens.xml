@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">16dp</dimen>
+    <dimen name="space_l">24dp</dimen>
+    <dimen name="radius_card">16dp</dimen>
+    <dimen name="radius_button">14dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="avatar_size">44dp</dimen>
+</resources>

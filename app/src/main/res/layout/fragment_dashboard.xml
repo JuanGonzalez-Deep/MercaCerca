@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="12dp">
+        <TextView
+            style="@style/TextAppearance.MC.Headline"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_margin="6dp" android:text="@string/resumen_general" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MC.Card"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_margin="6dp" android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <FrameLayout
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_primary_light">
+                        <ImageView
+                            android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                            android:contentDescription="@string/desc_icono"
+                            app:srcCompat="@drawable/ic_people" app:tint="@color/primary" />
+                    </FrameLayout>
+                    <TextView
+                        style="@style/TextAppearance.MC.Headline"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" android:text="128" />
+                    <TextView
+                        style="@style/TextAppearance.MC.Caption"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/kpi_usuarios" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MC.Card"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_margin="6dp" android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <FrameLayout
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_primary_light">
+                        <ImageView
+                            android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                            android:contentDescription="@string/desc_icono"
+                            app:srcCompat="@drawable/ic_store" app:tint="@color/primary" />
+                    </FrameLayout>
+                    <TextView
+                        style="@style/TextAppearance.MC.Headline"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" android:text="342" />
+                    <TextView
+                        style="@style/TextAppearance.MC.Caption"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/kpi_productos" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MC.Card"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_margin="6dp" android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <FrameLayout
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_primary_light">
+                        <ImageView
+                            android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                            android:contentDescription="@string/desc_icono"
+                            app:srcCompat="@drawable/ic_list" app:tint="@color/primary" />
+                    </FrameLayout>
+                    <TextView
+                        style="@style/TextAppearance.MC.Headline"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" android:text="89" />
+                    <TextView
+                        style="@style/TextAppearance.MC.Caption"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/kpi_pedidos" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MC.Card"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_margin="6dp" android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <FrameLayout
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_primary_light">
+                        <ImageView
+                            android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                            android:contentDescription="@string/desc_icono"
+                            app:srcCompat="@drawable/ic_report" app:tint="@color/primary" />
+                    </FrameLayout>
+                    <TextView
+                        style="@style/TextAppearance.MC.Headline"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" android:text="$4,2 M" />
+                    <TextView
+                        style="@style/TextAppearance.MC.Caption"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/kpi_ventas" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.MC.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/TextAppearance.MC.Title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/actividad_reciente" />
+                
+                <TextView style="@style/TextAppearance.MC.Title"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="Nuevo vendedor registrado" android:textSize="15sp" />
+                <TextView style="@style/TextAppearance.MC.Caption"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Finca La Esperanza · hace 10 min" />
+                
+                <TextView style="@style/TextAppearance.MC.Title"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="Pedido PED-1042 entregado" android:textSize="15sp" />
+                <TextView style="@style/TextAppearance.MC.Caption"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Comprador: Laura Gómez · hace 1 h" />
+                
+                <TextView style="@style/TextAppearance.MC.Title"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="Producto actualizado" android:textSize="15sp" />
+                <TextView style="@style/TextAppearance.MC.Caption"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Café de Huila 500 g · hace 3 h" />
+                
+                <TextView style="@style/TextAppearance.MC.Title"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="Reporte mensual generado" android:textSize="15sp" />
+                <TextView style="@style/TextAppearance.MC.Caption"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Octubre 2026 · ayer" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_header"
+            android:gravity="center_horizontal" android:orientation="vertical"
+            android:paddingTop="28dp" android:paddingBottom="32dp">
+            <TextView android:id="@+id/tvAvatar"
+                android:layout_width="84dp" android:layout_height="84dp"
+                android:background="@drawable/bg_circle_accent" android:gravity="center"
+                android:textColor="@color/primary_dark" android:textSize="32sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvUserName" style="@style/TextAppearance.MC.Display" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:textSize="22sp" />
+            <TextView android:id="@+id/tvRoleBadge" style="@style/Widget.MC.Badge" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView style="@style/TextAppearance.MC.Title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/datos_personales" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/nombre">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/correo">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/telefono">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/direccion">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPostalAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swBiometric" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:checked="true"
+                android:text="@string/habilitar_huella" app:thumbTint="@color/primary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveProfile" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:text="@string/guardar_cambios" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout" style="@style/Widget.MC.Button.Outlined" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="@string/cerrar_sesion"
+                app:icon="@drawable/ic_logout" app:iconTint="@color/primary" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

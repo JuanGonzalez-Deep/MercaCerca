@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:orientation="vertical">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent" android:layout_height="280dp"
+                android:background="@drawable/bg_header">
+                <ImageView
+                    android:layout_width="120dp" android:layout_height="120dp" android:layout_gravity="center"
+                    android:contentDescription="@string/desc_icono"
+                    app:srcCompat="@drawable/ic_store" app:tint="@color/accent" />
+                <ImageButton
+                    android:id="@+id/btnBack" style="@style/Widget.MC.IconButton"
+                    android:layout_margin="12dp" android:layout_marginTop="36dp"
+                    android:contentDescription="@string/volver"
+                    app:srcCompat="@drawable/ic_back" app:tint="@color/white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView
+                    android:id="@+id/tvCategory" style="@style/Widget.MC.Badge"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvName" style="@style/TextAppearance.MC.Headline"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+                <TextView
+                    android:id="@+id/tvPrice" style="@style/TextAppearance.MC.Price"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/tvSeller" style="@style/TextAppearance.MC.Body"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+                <TextView
+                    android:id="@+id/tvDescription" style="@style/TextAppearance.MC.Body"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:lineSpacingExtra="4dp"
+                    android:text="Producto fresco y artesanal de pequeños productores locales. Empacado con cuidado y entregado en el día para conservar su sabor y calidad." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_bar" android:orientation="horizontal"
+        android:padding="14dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCart" style="@style/Widget.MC.Button.Outlined"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp" android:layout_weight="1"
+            android:text="@string/agregar_carrito" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuy" style="@style/Widget.MC.Button.Accent"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" android:layout_weight="1"
+            android:text="@string/comprar_ahora" />
+    </LinearLayout>
+</LinearLayout>

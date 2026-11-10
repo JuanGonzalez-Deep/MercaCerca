@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.MC.Card" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+        <TextView
+            android:id="@+id/tvAvatar"
+            android:layout_width="@dimen/avatar_size" android:layout_height="@dimen/avatar_size"
+            android:background="@drawable/bg_circle_primary_light" android:gravity="center"
+            android:textColor="@color/primary" android:textSize="18sp" android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvName" style="@style/TextAppearance.MC.Title"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/tvEmail" style="@style/TextAppearance.MC.Caption"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/tvRole" style="@style/Widget.MC.Badge"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+        <ImageButton android:id="@+id/btnEdit" style="@style/Widget.MC.IconButton"
+            android:contentDescription="@string/editar"
+            app:srcCompat="@drawable/ic_edit" app:tint="@color/primary" />
+        <ImageButton android:id="@+id/btnDelete" style="@style/Widget.MC.IconButton"
+            android:contentDescription="@string/eliminar"
+            app:srcCompat="@drawable/ic_delete" app:tint="@color/error" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

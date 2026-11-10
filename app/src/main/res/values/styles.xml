@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== Temas ===== -->
+    <style name="Theme.MercaCerca" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="materialButtonStyle">@style/Widget.MC.Button</item>
+        <item name="textInputStyle">@style/Widget.MC.Input</item>
+    </style>
+
+    <style name="Theme.MercaCerca.Splash" parent="Theme.MercaCerca">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <!-- ===== Texto ===== -->
+    <style name="TextAppearance.MC.Display" parent="">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.MC.OnDark" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary_light</item>
+    </style>
+    <style name="TextAppearance.MC.Headline" parent="">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.MC.Title" parent="">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.MC.Body" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    <style name="TextAppearance.MC.Caption" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    <style name="TextAppearance.MC.Price" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- ===== Componentes ===== -->
+    <style name="Widget.MC.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+    <style name="Widget.MC.Button.Accent" parent="Widget.MC.Button">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+    <style name="Widget.MC.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="Widget.MC.Input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+    <style name="Widget.MC.Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+
+    <style name="Widget.MC.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.MC.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <style name="Widget.MC.Badge" parent="">
+        <item name="android:background">@drawable/bg_badge</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="Widget.MC.IconButton" parent="">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MercaCerca</string>
+    <string name="tagline">Lo mejor de tu región, cerca de ti</string>
+    <string name="desc_icono">Icono</string>
+    <string name="abrir_menu">Abrir menú</string>
+    <string name="cerrar_menu">Cerrar menú</string>
+    <string name="volver">Volver</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="guardar">Guardar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="buscar">Buscar</string>
+    <string name="agregar">Agregar</string>
+
+    <!-- Autenticación -->
+    <string name="login_sub">Inicia sesión para continuar</string>
+    <string name="bienvenido">Bienvenido de nuevo</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingresar_huella">Ingresar con huella</string>
+    <string name="olvide">¿Olvidaste tu contraseña?</string>
+    <string name="ingresar_como">Ingresar como</string>
+    <string name="rol_comprador">Comprador</string>
+    <string name="rol_vendedor">Vendedor</string>
+    <string name="rol_admin">Administrador</string>
+    <string name="o_continuar">o continúa con</string>
+    <string name="error_email">Ingresa un correo válido</string>
+    <string name="error_pass">Mínimo 6 caracteres</string>
+    <string name="error_requerido">Campo obligatorio</string>
+    <string name="biometria_titulo">Autenticación biométrica</string>
+    <string name="biometria_sub">Confirma tu identidad con tu huella</string>
+    <string name="biometria_no">Biometría no disponible en este dispositivo</string>
+    <string name="biometria_error">No se pudo validar tu identidad</string>
+    <string name="recuperar_titulo">Recuperar contraseña</string>
+    <string name="recuperar_desc">Escribe tu correo y te enviaremos un enlace para restablecerla.</string>
+    <string name="enviar_enlace">Enviar enlace</string>
+    <string name="enlace_enviado">Enlace enviado, revisa tu correo</string>
+
+    <!-- Navegación -->
+    <string name="dashboard">Dashboard</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="productos">Productos</string>
+    <string name="reporte_ventas">Reporte de ventas</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="mis_productos">Mis productos</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="perfil">Perfil</string>
+    <string name="inicio">Inicio</string>
+    <string name="catalogo">Catálogo</string>
+    <string name="carrito">Carrito</string>
+    <string name="panel_admin">Panel de administración</string>
+
+    <!-- Administrador -->
+    <string name="resumen_general">Resumen general</string>
+    <string name="kpi_usuarios">Usuarios</string>
+    <string name="kpi_productos">Productos</string>
+    <string name="kpi_pedidos">Pedidos</string>
+    <string name="kpi_ventas">Ventas del mes</string>
+    <string name="actividad_reciente">Actividad reciente</string>
+    <string name="gestion_usuarios">Gestión de usuarios</string>
+    <string name="gestion_usuarios_sub">Crea, edita o elimina cuentas</string>
+    <string name="gestion_productos">Gestión de productos</string>
+    <string name="gestion_productos_sub">Supervisa el catálogo completo</string>
+    <string name="historial_pedidos">Pedidos recibidos</string>
+    <string name="historial_pedidos_sub">Historial de ventas a tus clientes</string>
+    <string name="panel_productos_sub">Administra tu inventario</string>
+    <string name="nuevo_usuario">Nuevo usuario</string>
+    <string name="editar_usuario">Editar usuario</string>
+    <string name="nuevo_producto">Nuevo producto</string>
+    <string name="editar_producto">Editar producto</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="rol">Rol</string>
+    <string name="usuario_activo">Usuario activo</string>
+    <string name="categoria">Categoría</string>
+    <string name="precio">Precio (COP)</string>
+    <string name="stock">Unidades disponibles</string>
+    <string name="descripcion">Descripción</string>
+    <string name="tomar_foto">Tomar foto del producto</string>
+    <string name="confirmar_eliminar">¿Seguro que deseas eliminar este registro?</string>
+    <string name="guardado_ok">Cambios guardados</string>
+    <string name="ventas_6_meses">Ventas últimos 6 meses</string>
+    <string name="top_productos">Productos más vendidos</string>
+    <string name="exportar_reporte">Exportar reporte</string>
+    <string name="total_vendido">Total vendido</string>
+
+    <!-- Comprador -->
+    <string name="saludo">Hola, ¿qué se te antoja hoy?</string>
+    <string name="cerca_de_ti">Productores cerca de ti</string>
+    <string name="promo_titulo">Envío gratis</string>
+    <string name="promo_desc">En compras superiores a $50.000</string>
+    <string name="categorias">Categorías</string>
+    <string name="destacados">Destacados</string>
+    <string name="todos">Todos</string>
+    <string name="cat_cafe">Café</string>
+    <string name="cat_lacteos">Lácteos</string>
+    <string name="cat_frutas">Frutas</string>
+    <string name="cat_dulces">Dulces</string>
+    <string name="cat_despensa">Despensa</string>
+    <string name="buscar_producto">Buscar productos</string>
+    <string name="detalle_producto">Detalle del producto</string>
+    <string name="vendido_por">Vendido por</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="agregar_carrito">Agregar al carrito</string>
+    <string name="comprar_ahora">Comprar ahora</string>
+    <string name="agregado_carrito">Producto agregado al carrito</string>
+    <string name="mi_carrito">Mi carrito</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="envio">Envío</string>
+    <string name="total">Total</string>
+    <string name="ir_a_pagar">Ir a pagar</string>
+    <string name="pasarela_pago">Pasarela de pagos</string>
+    <string name="resumen_pedido">Resumen del pedido</string>
+    <string name="metodo_pago">Método de pago</string>
+    <string name="pago_tarjeta">Tarjeta crédito / débito</string>
+    <string name="pago_pse">PSE</string>
+    <string name="pago_nequi">Nequi</string>
+    <string name="pago_efectivo">Efectivo contra entrega</string>
+    <string name="numero_tarjeta">Número de tarjeta</string>
+    <string name="vencimiento">MM/AA</string>
+    <string name="cvv">CVV</string>
+    <string name="direccion_entrega">Dirección de entrega</string>
+    <string name="pagar">Pagar ahora</string>
+    <string name="pago_exitoso">Pago exitoso</string>
+    <string name="pago_exitoso_msg">Tu pedido fue recibido. El vendedor lo prepara.</string>
+
+    <!-- Perfil -->
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="datos_personales">Datos personales</string>
+    <string name="direccion">Dirección</string>
+    <string name="habilitar_huella">Habilitar ingreso con huella</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+</resources>

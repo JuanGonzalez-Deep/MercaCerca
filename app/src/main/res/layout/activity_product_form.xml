@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary" app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back" app:navigationIconTint="@color/white" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent" android:layout_height="170dp"
+                android:background="@drawable/bg_product_image">
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:contentDescription="@string/desc_icono"
+                    android:padding="40dp" android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_store" app:tint="@color/primary" />
+            </FrameLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPhoto" style="@style/Widget.MC.Button.Outlined"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="@string/tomar_foto"
+                app:icon="@drawable/ic_camera" app:iconTint="@color/primary" />
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/nombre">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCategory" style="@style/Widget.MC.Dropdown"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/categoria">
+                <AutoCompleteTextView
+                    android:id="@+id/ddCategory"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPrice"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/precio">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilStock"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/stock">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStock"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDesc"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/descripcion">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDesc"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:minLines="3" android:gravity="top" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="@string/guardar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

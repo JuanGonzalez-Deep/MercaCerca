@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView style="@style/TextAppearance.MC.Headline" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp" android:text="@string/mi_carrito" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:clipToPadding="false"
+        android:paddingStart="16dp" android:paddingEnd="16dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_bottom_bar"
+        android:orientation="vertical" android:padding="16dp">
+        
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+            <TextView style="@style/TextAppearance.MC.Body"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/subtotal" />
+            <TextView android:id="@+id/tvSubtotal" style="@style/TextAppearance.MC.Body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+            <TextView style="@style/TextAppearance.MC.Body"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/envio" />
+            <TextView android:id="@+id/tvShipping" style="@style/TextAppearance.MC.Body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+            <TextView style="@style/TextAppearance.MC.Title"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/total" />
+            <TextView android:id="@+id/tvTotal" style="@style/TextAppearance.MC.Price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheckout" style="@style/Widget.MC.Button.Accent" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="@string/ir_a_pagar" />
+    </LinearLayout>
+</LinearLayout>

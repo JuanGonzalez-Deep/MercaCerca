@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary" app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back" app:navigationIconTint="@color/white" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MC.Card"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:padding="16dp">
+                    <TextView
+                        style="@style/TextAppearance.MC.Title"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="@string/resumen_pedido" />
+                    <TextView
+                        android:id="@+id/tvTotal" style="@style/TextAppearance.MC.Price"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                style="@style/TextAppearance.MC.Title"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:text="@string/metodo_pago" />
+
+            <RadioGroup
+                android:id="@+id/rgMethod"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <RadioButton android:id="@+id/rbCard"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary" android:checked="true" android:text="@string/pago_tarjeta" />
+                <RadioButton android:id="@+id/rbPse"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary" android:text="@string/pago_pse" />
+                <RadioButton android:id="@+id/rbNequi"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary" android:text="@string/pago_nequi" />
+                <RadioButton android:id="@+id/rbCash"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary" android:text="@string/pago_efectivo" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/layoutCard"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCardNumber"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/numero_tarjeta">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCardNumber"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp" android:layout_marginEnd="6dp"
+                        android:layout_weight="1" android:hint="@string/vencimiento">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etExpiry"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp" android:layout_marginStart="6dp"
+                        android:layout_weight="1" android:hint="@string/cvv">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etCvv"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:inputType="numberPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAddress"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="@string/direccion_entrega">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPay" style="@style/Widget.MC.Button.Accent"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="@string/pagar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

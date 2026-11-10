@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_seller_products" android:icon="@drawable/ic_store" android:title="@string/productos" />
+    <item android:id="@+id/nav_seller_orders" android:icon="@drawable/ic_list" android:title="@string/pedidos" />
+    <item android:id="@+id/nav_seller_profile" android:icon="@drawable/ic_person" android:title="@string/perfil" />
+</menu>
